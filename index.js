@@ -11,3 +11,32 @@
 // All given sentences will end with a single punctuation mark. Keep the original punctuation of the sentence and move it to the end of the new sentence.
 // Return the new sentence, make sure there's a single space between each word and no spaces at the beginning or end of the sentence.
 // For example, given "You must speak wisely." return "Speak wisely, you must."
+
+function wiseSpeak(sentence) {
+  console.log(sentence);
+  // words array
+  const words = ['have', 'must', 'are', 'will', 'can'];
+
+  // split into an array
+  const sentArr = sentence.split(' ');
+  // find first occurence
+  console.log(sentArr);
+  // loop through sentence arr and find a word match
+  for (const [word, i] of sentArr) {
+    if (words.includes(word)) {
+      // get the index
+      console.log(i);
+    }
+  }
+
+  // move all words before & including to end of sentence
+  // // preserve order
+  // // lowercase
+  // // add comma & space before them
+
+  // capitalise the first letter of new sentence
+
+  // Keep punctuation at end of sentence
+
+  // make sure only single space between words
+}
